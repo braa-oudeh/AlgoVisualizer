@@ -1,5 +1,6 @@
 export function binarySearch(arr,target)
 {
+    const NOT_FOUND = -404;
     let l = 0;
     let r = (arr.length) - 1 
     while (l <= r)
@@ -21,5 +22,5 @@ export function binarySearch(arr,target)
         }
 
     }
-    return -404; // Not found
+    return NOT_FOUND;
 }
