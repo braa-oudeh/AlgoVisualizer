@@ -1,4 +1,4 @@
-import { mergeSort } from '../src/SortingAlgorithms/mergeSort.js';
+import { mergeSort } from '../../src/SortingAlgorithms/mergeSort.js';
 import { describe, test } from 'node:test';
 import assert from 'node:assert';
 
