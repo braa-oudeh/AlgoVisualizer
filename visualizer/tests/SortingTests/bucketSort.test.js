@@ -1,0 +1,25 @@
+import { bucketSort} from '../../src/SortingAlgorithms/bucketSort.js';
+import { insertionSort } from '../../src/SortingAlgorithms/insertionSort.js';
+import { describe, test } from 'node:test';
+import assert from 'node:assert';
+
+
+test('sorts an unsorted array', () => {
+  assert.deepStrictEqual(bucketSort([5, 3, 1, 4, 2]), [1, 2, 3, 4, 5]);
+});
+
+test('handles an empty array', () => {
+  assert.deepStrictEqual(bucketSort([]), []);
+});
+
+test('handles a single-element array', () => {
+  assert.deepStrictEqual(bucketSort([7]), [7]);
+});
+
+test('handles an already sorted array', () => {
+  assert.deepStrictEqual(bucketSort([1, 2, 3, 4, 5]), [1, 2, 3, 4, 5]);
+});
+
+test('handles duplicate values', () => {
+  assert.deepStrictEqual(bucketSort([4, 2, 4, 1, 2]), [1, 2, 2, 4, 4]);
+});
