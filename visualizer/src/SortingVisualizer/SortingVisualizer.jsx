@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { mergeSort, mergeLists } from '../SortingAlgorithms/mergeSort.js';
+import { useEffect } from 'react';
 export default function SortingVisualizer() {
     const [arr, setArr] = useState([]);
     function genereateNewArray()
@@ -9,8 +9,19 @@ export default function SortingVisualizer() {
         {
             temp.push(getRandomInt(5,1000));        // starts from 5 because bars less than that are small
         }
-        setArray(temp);
+        setArr(temp);
     }
+    useEffect(() => {
+        genereateNewArray();
+    }, []);
+
+    return (
+    <>
+    {arr.map((num, index) => (
+        <p key={index}>{num}</p>
+    ))}
+    </>
+    );
 }
 
 // https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range
