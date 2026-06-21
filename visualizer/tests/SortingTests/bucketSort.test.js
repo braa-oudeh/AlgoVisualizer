@@ -23,3 +23,23 @@ test('handles an already sorted array', () => {
 test('handles duplicate values', () => {
   assert.deepStrictEqual(bucketSort([4, 2, 4, 1, 2]), [1, 2, 2, 4, 4]);
 });
+
+test('handles negative numbers', () => {
+  assert.deepStrictEqual(bucketSort([-3, 1, -7, 0, 5]), [-7, -3, 0, 1, 5]);
+});
+
+test('handles all identical elements', () => {
+  assert.deepStrictEqual(bucketSort([4, 4, 4, 4]), [4, 4, 4, 4]);
+});
+
+test('handles fully reverse-sorted array', () => {
+  assert.deepStrictEqual(bucketSort([5, 4, 3, 2, 1]), [1, 2, 3, 4, 5]);
+});
+
+test('handles a larger unsorted array', () => {
+  assert.deepStrictEqual(bucketSort([9,1,8,2,7,3,6,4,5,0]), [0,1,2,3,4,5,6,7,8,9]);
+});
+
+test('handles two elements, unsorted', () => {
+  assert.deepStrictEqual(bucketSort([2, 1]), [1, 2]);
+});
