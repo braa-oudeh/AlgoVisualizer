@@ -1,4 +1,4 @@
-import {detectLinkedList} from '../../src/LinkedListsAlgorithms/detectLinkedListCycle.js';
+import { detectLinkedList } from '../../src/LinkedListsAlgorithms/detectLinkedListCycle.js';
 import { LinkedList } from '../../src/LinkedListsAlgorithms/linked-lists-objects/LinkedList.js';
 import { describe, test } from 'node:test';
 import assert from 'node:assert';
