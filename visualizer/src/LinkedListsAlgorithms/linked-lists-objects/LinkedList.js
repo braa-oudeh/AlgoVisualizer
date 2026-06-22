@@ -6,14 +6,14 @@ class Node {
     }
 }
 
-class LinkedList
+export class LinkedList
 {
     constructor()
     {
         this.head = null;
     }
 
-    add(data)
+    push(data)
     {
         const node = new Node(data);
         if (this.head == null)
@@ -42,12 +42,13 @@ class LinkedList
     }
     display()
     {
+        let result = "";
         let curr = this.head;
         while (curr)
         {
-            print(curr.data, end=" -> ")
-            curr = curr.next
+            result += (curr.data + " -> ");
+            curr = curr.next;
         }
-        print("None")
+        console.log(result + "None");
     }
 }
