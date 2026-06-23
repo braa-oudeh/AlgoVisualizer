@@ -1,4 +1,4 @@
-import { binarySearch } from '../../src/SearchingAlgorithms/binarySearch.js'
+import { binarySearch } from '../../src/Algorithms/SearchingAlgorithms/binarySearch.js'
 import { describe, test } from 'node:test';
 import assert from 'node:assert';
 

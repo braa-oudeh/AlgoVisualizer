@@ -1,4 +1,4 @@
-import { bubbleSort} from '../../src/SortingAlgorithms/bubbleSort.js';
+import { bubbleSort} from '../../src/Algorithms/SortingAlgorithms/bubbleSort.js';
 import { describe, test } from 'node:test';
 import assert from 'node:assert';
 

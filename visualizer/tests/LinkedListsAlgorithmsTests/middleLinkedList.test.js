@@ -1,5 +1,5 @@
-import { middleLinkedList } from '../../src/LinkedListsAlgorithms/middleLinkedList.js';
-import { LinkedList } from '../../src/LinkedListsAlgorithms/linked-lists-objects/LinkedList.js';
+import { middleLinkedList } from '../../src/Algorithms/LinkedListsAlgorithms/middleLinkedList.js';
+import { LinkedList } from '../../src/Algorithms/LinkedListsAlgorithms/linked-lists-objects/LinkedList.js';
 import { describe, test } from 'node:test';
 import assert from 'node:assert';
 

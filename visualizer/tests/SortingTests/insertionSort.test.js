@@ -1,4 +1,4 @@
-import { insertionSort} from '../../src/SortingAlgorithms/insertionSort.js';
+import { insertionSort} from '../../src/Algorithms/SortingAlgorithms/insertionSort.js';
 import { describe, test } from 'node:test';
 import assert from 'node:assert';
 

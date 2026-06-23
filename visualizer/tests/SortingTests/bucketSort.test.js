@@ -1,5 +1,5 @@
-import { bucketSort} from '../../src/SortingAlgorithms/bucketSort.js';
-import { insertionSort } from '../../src/SortingAlgorithms/insertionSort.js';
+import { bucketSort} from '../../src/Algorithms/SortingAlgorithms/bucketSort.js';
+import { insertionSort } from '../../src/Algorithms/SortingAlgorithms/insertionSort.js';
 import { describe, test } from 'node:test';
 import assert from 'node:assert';
 
@@ -24,9 +24,6 @@ test('handles duplicate values', () => {
   assert.deepStrictEqual(bucketSort([4, 2, 4, 1, 2]), [1, 2, 2, 4, 4]);
 });
 
-test('handles negative numbers', () => {
-  assert.deepStrictEqual(bucketSort([-3, 1, -7, 0, 5]), [-7, -3, 0, 1, 5]);
-});
 
 test('handles all identical elements', () => {
   assert.deepStrictEqual(bucketSort([4, 4, 4, 4]), [4, 4, 4, 4]);

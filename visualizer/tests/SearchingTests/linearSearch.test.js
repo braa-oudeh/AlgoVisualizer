@@ -1,4 +1,4 @@
-import { linearSearch } from '../../src/SearchingAlgorithms/linearSearch.js'
+import { linearSearch } from '../../src/Algorithms/SearchingAlgorithms/linearSearch.js'
 import { describe, test } from 'node:test';
 import assert from 'node:assert';
 
