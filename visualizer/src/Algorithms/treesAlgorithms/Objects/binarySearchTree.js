@@ -115,13 +115,13 @@ export class binarySearchTree
                 return root;
             }
             else if (root.right != null) { //find a successor to replace this node to not break the binary search tree
-                root.data = this.#successor(root);
-                root.right = this.#removeHelper(root.right, root.data);
+                root.data = this.#successor(root);          // replace the root node data with the successor
+                root.right = this.#removeHelper(root.right, root.data);         // proceed to delete the successor since we don't need it anymore
 
             }
             else 
-            {  
-                root.data = this.#predecessor(root);
+            {
+                root.data = this.#predecessor(root);    // replaces the root with the predeccor data
                 root.left = this.#removeHelper(root.left, root.data);
 
             }
