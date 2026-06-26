@@ -1,5 +1,5 @@
-import { removeNthFromEnd } from '../../src/LinkedListsAlgorithms/removeNthFromEnd.js';
-import { LinkedList } from '../../src/LinkedListsAlgorithms/linked-lists-objects/LinkedList.js';
+import { removeNthFromEnd } from '../../src/Algorithms/LinkedListsAlgorithms/removeNthFromEnd.js';
+import { LinkedList } from '../../src/Algorithms/LinkedListsAlgorithms/linked-lists-objects/LinkedList.js';
 import { describe, test } from 'node:test';
 import assert from 'node:assert';
 

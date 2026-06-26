@@ -1,4 +1,4 @@
-import { LinkedList} from '../../src/LinkedListsAlgorithms/linked-lists-objects/LinkedList.js'
+import { LinkedList} from '../../src/Algorithms/LinkedListsAlgorithms/linked-lists-objects/LinkedList.js'
 import { describe, test } from 'node:test';
 import assert from 'node:assert';
 
@@ -71,7 +71,7 @@ test('check if linked list delete works for deleting all elements', () => {
     {
         ll_list.push(i);
     }
-    
+
     ll_list.delete(0);
     ll_list.delete(1);
     ll_list.delete(2);

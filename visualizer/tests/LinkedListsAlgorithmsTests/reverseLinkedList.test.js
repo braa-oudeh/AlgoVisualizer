@@ -1,5 +1,5 @@
-import {reverseLinkedList} from '../../src/LinkedListsAlgorithms/reverseLinkedList.js';
-import { LinkedList } from '../../src/LinkedListsAlgorithms/linked-lists-objects/LinkedList.js';
+import {reverseLinkedList} from '../../src/Algorithms/LinkedListsAlgorithms/reverseLinkedList.js';
+import { LinkedList } from '../../src/Algorithms/LinkedListsAlgorithms/linked-lists-objects/LinkedList.js';
 import { describe, test } from 'node:test';
 import assert from 'node:assert';
 
