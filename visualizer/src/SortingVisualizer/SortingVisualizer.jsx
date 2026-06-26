@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { mergeSort, mergeLists } from '../Algorithms/SortingAlgorithms/mergeSort.js';
 export default function SortingVisualizer() {
   return (
     <>
